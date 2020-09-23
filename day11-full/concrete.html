@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>立即购买</title>
+		<link rel="stylesheet" type="text/css" href="css/num.css"/>
+	</head>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.a1{
+			height: 30px;
+			
+			position: relative;
+		}
+		.a1 p{
+			position: absolute;
+			right: 20px;
+		}
+		.a1 a{
+			color: black;
+			margin-left: 10px;
+			font-size: 10px;
+		}
+		.a2{
+			height: 33px;
+			background-color: #eee;
+		}
+		.a2 p{
+			margin-left: 40px;
+			font-size: 15px;
+			line-height: 30px;
+		}
+		.a3{
+			width: 1000px;
+			height: 500px;
+			/*background-color: grey;*/
+			margin: 0 auto;
+		}
+		.c{
+			float: left;
+		}
+		#left{
+			background-color: green;
+			width: 400px;
+			height: 500px;
+		}
+		#right{
+			/*background-color: turquoise;*/
+			width: 596px;
+			height: 496px;
+			border: solid 2px #eee;
+		}
+		.b1{
+			height: 50px;
+			width: 596px;
+				
+		}
+		.b1 p{
+			font-size: 30px;
+			text-align: center;
+			line-height: 50px;	
+		}
+		.b2{
+			height: 100px;
+			width: 596px;
+			background-color: antiquewhite;
+			text-align: center;
+		}
+		.b2 p{
+			line-height: 48px;
+			font-size: 20px;
+		}
+		.b2 p span{
+			color: red;
+			font-size: 25px;
+			
+		}
+		.b3{
+			height: 300px;
+			width: 596px;
+			
+		}
+		.b4 p{
+			background-color: red;
+			width: 140px;
+			color: white;
+			text-align: center;
+			border: solid 2px red;
+			margin: 0 auto;
+			font-size: 22px;
+			line-height: 44px;
+			cursor: pointer;
+		}
+		.b4 p a{
+			color: white;
+		}
+		.b5{
+			height: 80px;
+			width: 596px;
+			background-color: #eee;
+			text-align: center;
+			
+		}
+		.b5 p{
+			
+			font-size: 10px;
+			line-height: 25px;
+			
+		}
+		.footer{
+				clear: both;
+				height:150px;
+				
+				margin: 0 auto;
+				border: solid 1px #eee;
+				background-color: gainsboro;
+				margin-top: 10px;
+				padding-top: 50px;
+				background-image: url(img/0012.png);
+				background-repeat: no-repeat;
+				background-position: 50px 30px;
+			}
+			
+			.footer p{
+				color: black;
+				line-height: 40px;
+				font-size: 14px;
+				text-align: center;
+			}
+			#login{
+				color: white;
+			}
+
+	</style>
+	<body>
+		<div class="a1">
+			<p><a href="###">注册</a><a href="###">登录</a></p>
+		</div>
+		<div class="a2">
+			<p><a href="###"><img src="img/logout2.png"/>首页</a></p>
+		</div>
+		<hr />
+		<div class="a3">
+			<div class="c" id="left">
+				
+			</div>
+			<div class="c" id="right">
+				<div class="b1">
+					<p>秋季网红毛衣</p>
+				</div>
+				<div class="b2">
+					<p>原价：<span><del>￥199</del></span></p>
+					<p>秒杀价:<span>￥99</span></p>
+				</div>
+				<div class="b3">
+					<div class="b5"><p>优惠：</p>
+					    <p>满100元减5元</p>
+					    <p>满200元减15元</p>
+					</div>
+					<p style="margin-top: 30px; margin-left: 10px;">尺码：<input type="radio" name="a">S<input type="radio" name="a">M
+					        <input type="radio" name="a">L<input type="radio" name="a">XL
+					        <input type="radio" name="a">2XL<input type="radio" name="a">3XL
+					</p>
+			        <p style="margin-top: 50px; margin-left: 10px;">选择颜色：<select><option>红</option><option>橙</option>
+			<option>黄</option><option>绿</option></select></p>
+				    <ul class="btn-numbox">
+				    	<li> <span class="number">  数量：</span></li>
+				    	<li>
+				    		<ul class="count">
+				    			<li><span id="num-jian"><h3>-</h3></span></li>
+				    			<li><input type="text" class="input-num" id="input-num" value="0"/></li>
+				    			<li><span id="num-jia"><h3>+</h3></span></li>
+				    		</ul>
+				    	</li>
+				    	<li><span class="kucun">(库存：300)</span></li>
+				    </ul>
+				       
+				</div>
+				<div class="b4">
+					<p><a href="###">加入购物车</a></p>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+		<p>地址：重庆市巴南区龙洲湾街道尚文大道906号(401320)  </p>
+		<p>电话：023-88968651 传真：023-88968650  </p>
+		<p><a href="admin/login.html" id="login">后台管理入口</a></p>
+	</div>
+
+		<script type="text/javascript" src="js/num.js" ></script>
+		<script type="text/javascript">
+			$("body").on("click",".num-jian",function (m) {
+           var obj = $(this).closest("ul").find(".input-num");
+           if (obj.val() <= 0) {
+                obj.val(0);
+           } else {
+                obj.val(parseInt(obj.val()) - 1);
+           }
+           obj.change();
+     });
+     $("body").on("click",".num-jia",function (m) {
+           var obj = $(this).closest("ul").find(".input-num");
+           obj.val(parseInt(obj.val()) + 1);
+           obj.change();
+     });
+		</script>
+	</body>
+</html>

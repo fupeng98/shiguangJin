@@ -1,0 +1,781 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>时光锦发购物商城</title>
+		<link rel="stylesheet" type="text/css" href="css/comm.css"/>
+		<link rel="stylesheet" type="text/css" href="css/slide.css"/>
+		<style type="text/css">
+			.header{
+				width: 1250px;
+				height: 20px;
+				line-height: 60px;
+				background-color:grey;
+				box-shadow: 0px 2px 2px white;
+				margin: 0 auto;
+				text-align: center;
+				color: white;
+				font-size: 10px;
+				padding-bottom: 10px;
+			
+				
+				
+			}
+			
+			
+			
+			
+			
+			.header ul{
+				list-style: none;
+				margin-right: 10px;
+				width: 500px;
+				
+			}
+			
+			.header ul li{
+				line-height: 30px;
+				float: left;
+				padding: 0 10px;
+				
+			}
+			
+			.header ul li:hover {
+				
+				background-color: black;
+				
+			}
+			.header ul li a{
+				text-decoration: none;
+				color: #fff;
+				
+			  	
+			}	
+			
+				
+		   .newsitem ul li a:hover{
+		   	
+		   	background-color: royalblue;
+		   }
+				
+				
+			.main{
+				width: 1250px;
+				
+				margin: 0 auto;
+				overflow: hidden;
+				
+				
+			}	
+			.dhz{
+				width: 1250px;
+				height: 500px;
+			}
+			.bbc{
+				height: 500px;
+				width: 250px;
+				float: left;
+				font-size:18px;
+				color: black;
+				background-color: wheat;
+				position: relative;
+				z-index: 1000;
+				background-image: url(img/003.jpg);
+			} 
+			.bbc ul{
+				padding-top: 20px;
+			}
+			
+			.bbc ul li{
+				padding-left: 20px;
+				height: 35px;
+				line-height: 35px;
+				
+			}
+			
+			
+			
+			
+			.bbc ul li:hover{
+			    background-color: wheat;
+			}
+			
+			
+			.subnav{
+				width: 800px;
+				height: 400px;
+				background-color:wheat;
+				position: absolute;
+				left:250px;
+				top: 0;
+				display: none;
+				
+			}
+			
+			.bbc ul li:hover .subnav
+			{
+				width: 800px;
+				display: block;
+				opacity: 0.9;
+			}
+			
+			
+			
+			
+			.pptwrapper{
+				padding-top: 0px;
+				width: 1000px;
+				min-height: 500px;
+				float: left;
+				background-color: white;
+			    background-image: url(img/0013.gif)
+			}
+			
+			.newsitem{
+				width:388px;
+				height:252px;
+				float: left;
+				border: solid 1px #eee;
+				margin-top: 10px;
+				margin-right: 10px;
+			}
+			.itemright{
+				margin-right:0;
+				width: 398px;
+			}
+			.newsitem .title{
+				height: 35px;
+				line-height: 35px;
+				padding-left: 10px;
+				border-bottom: solid 1px #eee;
+				background-color: #eee;
+				color: #333;
+			}
+			
+			.newsitem a {
+				line-height:30px;
+				border-bottom:dashed 1px #eee;
+				display: block;
+				padding-left: 10px;
+				color: #333;
+			}
+			
+			.footer{
+				clear: both;
+				height:150px;
+				width: 1250px;
+				margin: 0 auto;
+				border: solid 1px #eee;
+				background-color: gainsboro;
+				margin-top: 10px;
+				padding-top: 50px;
+				background-image: url(img/0012.png);
+				background-repeat: no-repeat;
+				background-position: 50px 30px;
+			}
+			
+			.footer p{
+				color: black;
+				line-height: 35px;
+				font-size: 14px;
+				text-align: center;
+			}
+			
+			.dkk{
+				
+				
+				width: 1250px;
+				height: 800px;
+				background-color: gainsboro;
+				
+				
+			}
+			
+			#login{
+				color:#A52A2A ;
+			}
+			
+			.item{
+				width:175px;
+				height:170px;
+				float: left;
+				margin-left: 20px;
+				margin-top: 20px;
+				
+			}
+			.item a{
+				display: block;
+				text-align: center;
+				color: white;
+				line-height: 24px;
+			}
+			.item a img{
+				width: 168px;
+				height: 100px;
+			}
+			
+			.item p{
+				text-align: center;
+				color: white;
+			}
+			
+			.xkk{
+				
+				width: 300px;
+				height: 300px;
+				background-color:yellow;
+				float: left;
+				margin-left: 10px;
+				margin-top: 50px;
+				box-shadow: 0 0 2px 2px #000000;
+			}
+
+			
+			.zkk{
+				width: 300px;
+				height: 40px;
+				background-color:lightcoral;
+				float: left;
+				margin-left: 10px;
+				margin-top: 40px;
+				font-size: 18px;
+				color: white;
+				text-align: center;
+				padding-top: 10px;
+				
+			}
+			
+			.xkk a img{
+				width: 200px;
+				height: 200px;
+				margin-left: 40px;
+			}
+			.xkk p{
+				text-align: center;
+			}
+			.zz{
+				
+				margin: auto;
+				width: 1250px;
+				height: 80px;
+				background-color: yellow;
+				background-image: url(img/0016.jpg)
+			}
+			
+			.zz ul li a{
+				color: black;
+				margin: 10px;
+				float: left;
+				font-size: 18px;
+				
+				
+			  
+				
+			}
+			.zz ul{
+				list-style: none;
+				margin-left: 400px;
+				
+				
+				
+			}
+			.zz ul li{
+				text-align: center;
+			}
+			.zz img{
+				width: 65px;
+				height: 70px;
+				padding-top: 0px;
+				margin-right: 800px;
+			}
+			.zz ul li a:hover{
+				background-color: royalblue;
+			}
+			
+			.pic{
+				width: 80px;
+				height: 60px;
+				float: left;
+				margin-top: 10px;
+				
+			}
+			.dul{
+				width: 1170px;
+				height: 60px;
+				float: left;
+				
+				margin-top: 10px;
+			}
+		</style>
+	</head>
+	<body>
+	<div class="header">
+		<ul>
+			<li><a href="http://127.0.0.1:8020/day11-full/QD.html">首页</a></li>
+			
+			
+			
+			
+			<li><a href="newslist.html">购物车</a></li>
+			<li><a href="http://127.0.0.1:8020/day11-full/index.html">登录/注册</a></li>
+			
+		<ul>
+		
+		
+		
+	</div>
+	<div class="zz">
+		<div class="pic">
+			<img src="img/0014.jpg" />
+		</div>
+		<div class="dul">
+			<ul>
+				<li><a href="http://127.0.0.1:8020/Shopping/chaju.html">传统汉服</a></li>
+				
+				
+				<li><a href="http://127.0.0.1:8020/Shopping/chaju.html">鞋类</a></li>
+				<li><a href="http://127.0.0.1:8020/Shopping/chaju.html">礼品</a></li>
+				<li><a href="http://127.0.0.1:8020/Shopping/chaju.html">饰品</a></li>
+				<li><a href="http://127.0.0.1:8020/Shopping/chaju.html">生活周边</a></li>
+				<li><a href="http://127.0.0.1:8020/Shopping/chaju.html">人气商品</a></li>
+			<ul>
+		</div>
+	</div>
+	
+	
+	<div class="main">
+		<div class="dhz">
+			<!--左侧菜单开始-->
+			<div class="bbc">
+				<ul>
+					<li>
+						传统汉服
+						<div class="subnav">
+							<div class="item">
+								<a href="###"><img src="img/nv.png"></a>
+								<a href="###">皮尔卡丹</a>
+								<p>￥12000.00</p>
+							</div>
+							<div class="item">
+								<a href="###"><img src="img/nv.png"></a>
+								<a href="###">皮尔卡丹</a>
+								<p>￥12000.00</p>
+							</div>
+							<div class="item">
+								<a href="###"><img src="img/nv.png"></a>
+								<a href="###">皮尔卡丹</a>
+								<p>￥12000.00</p>
+							</div>
+							<div class="item">
+								<a href="###"><img src="img/nv.png"></a>
+								<a href="###">皮尔卡丹</a>
+								<p>￥12000.00</p>
+							</div>
+							<div class="item">
+								<a href="###"><img src="img/nv.png"></a>
+								<a href="###">皮尔卡丹</a>
+								<p>￥12000.00</p>
+							</div>
+							<div class="item">
+								<a href="###"><img src="img/nv.png"></a>
+								<a href="###">皮尔卡丹</a>
+								<p>￥12000.00</p>
+							</div>
+							<div class="item">
+								<a href="###"><img src="img/nv.png"></a>
+								<a href="###">皮尔卡丹</a>
+								<p>￥12000.00</p>
+							</div>
+							<div class="item">
+								<a href="###"><img src="img/nv.png"></a>
+								<a href="###">皮尔卡丹</a>
+								<p>￥12000.00</p>
+							</div>
+						</div>
+					</li>
+					<li>鞋类
+						<div class="subnav">
+							<div class="item">
+								<a href="###"><img src="img/shoes.png"></a>
+								<a href="###">女鞋</a>
+								<p>￥120.00</p>
+							</div>
+							<div class="item">
+								<a href="###"><img src="img/shoes.png"></a>
+								<a href="###">女鞋</a>
+								<p>￥12000.00</p>
+							</div>
+							<div class="item">
+								<a href="###"><img src="img/shoes.png"></a>
+								<a href="###">女鞋</a>
+								<p>￥12000.00</p>
+							</div>
+							<div class="item">
+								<a href="###"><img src="img/shoes.png"></a>
+								<a href="###">女鞋</a>
+								<p>￥12000.00</p>
+							</div>
+							<div class="item">
+								<a href="###"><img src="img/shoes2.png"></a>
+								<a href="###">男鞋</a>
+								<p>￥12000.00</p>
+							</div>
+							<div class="item">
+								<a href="###"><img src="img/shoes2.png"></a>
+								<a href="###">男鞋</a>
+								<p>￥12000.00</p>
+							</div>
+							<div class="item">
+								<a href="###"><img src="img/shoes2.png"></a>
+								<a href="###">男鞋</a>
+								<p>￥12000.00</p>
+							</div>
+							<div class="item">
+								<a href="###"><img src="img/shoes2.png"></a>
+								<a href="###">男鞋</a>
+								<p>￥12000.00</p>
+							</div>
+						</div>
+						
+						<li>人气商品
+						<div class="subnav">
+							<div class="item">
+								<a href="###"><img src="img/nv.png"></a>
+								<a href="###">皮尔卡丹</a>
+								<p>￥120.00</p>
+							</div>
+							<div class="item">
+								<a href="###"><img src="img/nv.png"></a>
+								<a href="###">皮尔卡丹</a>
+								<p>￥12000.00</p>
+							</div>
+							<div class="item">
+								<a href="###"><img src="img/nv.png"></a>
+								<a href="###">皮尔卡丹</a>
+								<p>￥12000.00</p>
+							</div>
+							<div class="item">
+								<a href="###"><img src="img/nv.png"></a>
+								<a href="###">皮尔卡丹</a>
+								<p>￥12000.00</p>
+							</div>
+							<div class="item">
+								<a href="###"><img src="img/nv.png"></a>
+								<a href="###">皮尔卡丹</a>
+								<p>￥12000.00</p>
+							</div>
+							<div class="item">
+								<a href="###"><img src="img/nv.png"></a>
+								<a href="###">皮尔卡丹</a>
+								<p>￥12000.00</p>
+							</div>
+							<div class="item">
+								<a href="###"><img src="img/nv.png"></a>
+								<a href="###">皮尔卡丹</a>
+								<p>￥12000.00</p>
+							</div>
+							<div class="item">
+								<a href="###"><img src="img/nv.png"></a>
+								<a href="###">皮尔卡丹</a>
+								<p>￥12000.00</p>
+							</div>
+						</div>
+						
+					</li>
+					<li>
+						新品
+						<div class="subnav">
+							<div class="item">
+								<a href="###"><img src="img/nv.png"></a>
+								<a href="###">皮尔卡丹</a>
+								<p>￥12000.00</p>
+							</div>
+							<div class="item">
+								<a href="###"><img src="img/nv.png"></a>
+								<a href="###">皮尔卡丹</a>
+								<p>￥12000.00</p>
+							</div>
+							<div class="item">
+								<a href="###"><img src="img/nv.png"></a>
+								<a href="###">皮尔卡丹</a>
+								<p>￥12000.00</p>
+							</div>
+							<div class="item">
+								<a href="###"><img src="img/nv.png"></a>
+								<a href="###">皮尔卡丹</a>
+								<p>￥12000.00</p>
+							</div>
+							<div class="item">
+								<a href="###"><img src="img/nv.png"></a>
+								<a href="###">皮尔卡丹</a>
+								<p>￥12000.00</p>
+							</div>
+							<div class="item">
+								<a href="###"><img src="img/nv.png"></a>
+								<a href="###">皮尔卡丹</a>
+								<p>￥12000.00</p>
+							</div>
+							<div class="item">
+								<a href="###"><img src="img/nv.png"></a>
+								<a href="###">皮尔卡丹</a>
+								<p>￥12000.00</p>
+							</div>
+							<div class="item">
+								<a href="###"><img src="img/nv.png"></a>
+								<a href="###">皮尔卡丹</a>
+								<p>￥12000.00</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						礼品
+						<div class="subnav">
+							<div class="item">
+								<a href="###"><img src="img/nv.png"></a>
+								<a href="###">皮尔卡丹</a>
+								<p>￥12000.00</p>
+							</div>
+							<div class="item">
+								<a href="###"><img src="img/nv.png"></a>
+								<a href="###">皮尔卡丹</a>
+								<p>￥12000.00</p>
+							</div>
+							<div class="item">
+								<a href="###"><img src="img/nv.png"></a>
+								<a href="###">皮尔卡丹</a>
+								<p>￥12000.00</p>
+							</div>
+							<div class="item">
+								<a href="###"><img src="img/nv.png"></a>
+								<a href="###">皮尔卡丹</a>
+								<p>￥12000.00</p>
+							</div>
+							<div class="item">
+								<a href="###"><img src="img/nv.png"></a>
+								<a href="###">皮尔卡丹</a>
+								<p>￥12000.00</p>
+							</div>
+							<div class="item">
+								<a href="###"><img src="img/nv.png"></a>
+								<a href="###">皮尔卡丹</a>
+								<p>￥12000.00</p>
+							</div>
+							<div class="item">
+								<a href="###"><img src="img/nv.png"></a>
+								<a href="###">皮尔卡丹</a>
+								<p>￥12000.00</p>
+							</div>
+							<div class="item">
+								<a href="###"><img src="img/nv.png"></a>
+								<a href="###">皮尔卡丹</a>
+								<p>￥12000.00</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						茶叶
+						<div class="subnav">
+							<div class="item">
+								<a href="###"><img src="img/nv.png"></a>
+								<a href="###">皮尔卡丹</a>
+								<p>￥12000.00</p>
+							</div>
+							<div class="item">
+								<a href="###"><img src="img/nv.png"></a>
+								<a href="###">皮尔卡丹</a>
+								<p>￥12000.00</p>
+							</div>
+							<div class="item">
+								<a href="###"><img src="img/nv.png"></a>
+								<a href="###">皮尔卡丹</a>
+								<p>￥12000.00</p>
+							</div>
+							<div class="item">
+								<a href="###"><img src="img/nv.png"></a>
+								<a href="###">皮尔卡丹</a>
+								<p>￥12000.00</p>
+							</div>
+							<div class="item">
+								<a href="###"><img src="img/nv.png"></a>
+								<a href="###">皮尔卡丹</a>
+								<p>￥12000.00</p>
+							</div>
+							<div class="item">
+								<a href="###"><img src="img/nv.png"></a>
+								<a href="###">皮尔卡丹</a>
+								<p>￥12000.00</p>
+							</div>
+							<div class="item">
+								<a href="###"><img src="img/nv.png"></a>
+								<a href="###">皮尔卡丹</a>
+								<p>￥12000.00</p>
+							</div>
+							<div class="item">
+								<a href="###"><img src="img/nv.png"></a>
+								<a href="###">皮尔卡丹</a>
+								<p>￥12000.00</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						生活周边
+						<div class="subnav">
+							<div class="item">
+								<a href="###"><img src="img/nv.png"></a>
+								<a href="###">皮尔卡丹</a>
+								<p>￥12000.00</p>
+							</div>
+							<div class="item">
+								<a href="###"><img src="img/nv.png"></a>
+								<a href="###">皮尔卡丹</a>
+								<p>￥12000.00</p>
+							</div>
+							<div class="item">
+								<a href="###"><img src="img/nv.png"></a>
+								<a href="###">皮尔卡丹</a>
+								<p>￥12000.00</p>
+							</div>
+							<div class="item">
+								<a href="###"><img src="img/nv.png"></a>
+								<a href="###">皮尔卡丹</a>
+								<p>￥12000.00</p>
+							</div>
+							<div class="item">
+								<a href="###"><img src="img/nv.png"></a>
+								<a href="###">皮尔卡丹</a>
+								<p>￥12000.00</p>
+							</div>
+							<div class="item">
+								<a href="###"><img src="img/nv.png"></a>
+								<a href="###">皮尔卡丹</a>
+								<p>￥12000.00</p>
+							</div>
+							<div class="item">
+								<a href="###"><img src="img/nv.png"></a>
+								<a href="###">皮尔卡丹</a>
+								<p>￥12000.00</p>
+							</div>
+							<div class="item">
+								<a href="###"><img src="img/nv.png"></a>
+								<a href="###">皮尔卡丹</a>
+								<p>￥12000.00</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!--左侧菜单结束-->
+			<!--轮播开始-->
+			<div class="pptwrapper">
+				<div class="pptbox" id="ppt01">
+					<ul class="innerwrapper">
+						<div>
+							
+						<li><a href="#"><img src="img/006.gif"/></a></li>	
+						
+						</div>
+					</ul>
+					<ul class="controls">
+						<li class="current">1</li>
+						<li>2</li>
+						<li>3</li>
+					</ul>			
+					<span class="btnleft"></span>
+					<span class="btnright"></span>
+				</div>					
+			</div>
+			<!--轮播结束-->
+			
+		</div>
+		
+		<div class="dkk">
+			
+				<div class="xkk"> 
+					<p>爆销热品</p>
+					<a href="###"><img src="img/nv.png"></a>
+					<p>皮卡尔</p>
+					<p>双12特价商品</p>
+					<p>￥1200.00</p>
+				</div>
+				<div class="xkk">
+					<p>爆销热品</p>
+					<a href="###"><img src="img/nv.png"></a>
+					<p>皮卡尔</p>
+					<p>双12特价商品</p>
+					<p>￥1200.00</p>
+				</div>
+					
+				<div class="xkk"> <p>爆销热品</p>
+				<a href="###"><img src="img/nv.png"></a>
+					<p>皮卡尔</p>
+					<p>双12特价商品</p>
+					<p>￥1200.00</p>
+				</div>
+				<div class="xkk"> <p>爆销热品</p>
+				<a href="###"><img src="img/nv.png"></a>
+					<p>皮卡尔</p>
+					<p>双12特价商品</p>
+					<p>￥1200.00</p>
+				</div>
+				<div class="xkk"> <p>时尚单品</p>
+					<a href="###"><img src="img/nv.png"></a>
+					<p>皮卡尔</p>
+					<p>双12特价商品</p>
+					<p>￥1200.00</p>
+					
+				</div>
+				<div class="xkk"> <p>时尚单品</p>
+				<a href="###"><img src="img/nv.png"></a>
+					<p>皮卡尔</p>
+					<p>双12特价商品</p>
+					<p>￥1200.00</p>
+				</div>
+				<div class="xkk"> <p>时尚单品</p>
+				<a href="###"><img src="img/nv.png"></a>
+					<p>皮卡尔</p>
+					<p>双12特价商品</p>
+					<p>￥1200.00</p>
+				</div>
+				<div class="xkk"> <p>时尚单品</p>
+				<a href="###"><img src="img/nv.png"></a>
+					<p>皮卡尔</p>
+					<p>双12特价商品</p>
+					<p>￥1200.00</p>
+				</div>
+				
+		<div class="kk">	
+			<div class="zkk"> 7天包退  </div>
+			<div class="zkk"> 快速发货	</div>	
+			<div class="zkk"> 质量保证	</div>	
+			<div class="zkk"> 售后服务	</div>	
+				</div>	
+				
+			</div>
+		
+		
+	<div class="footer">
+		<p>地址：重庆市巴南区龙洲湾街道尚文大道906号(401320)  </p>
+		<p>电话：023-88968651 传真：023-88968650  </p>
+		<p><a href="admin/login.html" id="login">后台管理入口</a></p>
+	</div>
+		
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/tyslide.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$("#ppt01").tyslide({
+			boxh:500,//盒子的高度
+			w:1000,//盒子的宽度
+			h:500,//图片的高度
+			isShow:true,//是否显示控制器
+			isShowBtn:true,//是否显示左右按钮
+			controltop:5,//控制按钮上下偏移的位置,要将按钮向下移动   首先保证boxh 高度>图片 h
+			controlsW:60,//控制按钮宽度
+			controlsH:10,//控制按钮高度
+			radius:0,//控制按钮圆角度数
+			controlsColor:"#eee",//普通控制按钮的颜色
+			controlsCurrentColor:"#ccc"//当前控制按钮的颜色
+		});
+		</script>
+	</body>
+</html>
